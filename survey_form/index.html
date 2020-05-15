@@ -2,22 +2,75 @@
 <html lang="en">
     <head>
         <title>survey</title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">    
     </head>
     <body>
-        <header></header>
-        <h1 id="title">Customer Satisfaction Survey Form</h1>
-        <p id="description">Thank you for taking the time to help us improve your experience!</p>
-        <p> 
-            <form id="survey-form">
-                <label for="name"> Name: </label>
-                <input type="text" id="name" name="name">
-                <br>
-                <label for="email"> Email: </label>
-                <input type="text" id="email" name="email">
-            </form>
-        </p>
-        <footer></footer>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <div class="allelements">
+            <h1 id="title">Customer Satisfaction Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve your experience!</p>
+            <p> 
+                <form id="survey-form">
+                    <label for="name" id="name-label"> Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <br>
+                    <label for="email" id="email-label"> Email: </label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Email"
+                        required>
+                    <br>
+                    <label for="number" id="number-label"> Age (optional): </label>
+                    <input type="number" id="number" name="age" min="10" max="100" placeholder="Age">
+                    <br>
+                    <label for="gender">Please enter your gender:</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="unknown" name="gender" value="unknown">
+                    <label for="unknown">Rather not say</label>
+                    <br>
+                    <label for="dropdown">How often do you use the app?</label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Few times a month</option>
+                        <option value="yearly">Few times a year</option>
+                        <option value="notsure">Not sure yet!</option>
+                    </select>
+                    <br>
+                    <label for="dropdown2">Would you recommend this app to family or friends?</label>
+                    <select name="dropdown2" id="dropdown">
+                        <option value="yes">Yes!</option>
+                        <option value="no">No</option>
+                        <option value="notyet">I'm new to the app</option>
+                    </select>
+                    
+                    <br>
+                    <label for="checkbox">What items would you like to see on our app?</label>
+                    <br>
+                    <input type='checkbox' name='wdesigner' value='wdesigner'> Womens' Designer Clothes<br>
+                    <input type='checkbox' name='child' value='child' > Childrens' Clothes<br>
+                    <input type='checkbox' name='mdesigner' value='mdesigner' > Mens' Designer Clothes<br>
+                    <input type='checkbox' name='overstock' value='overstock' > Outlet or overstock clothes<br>
+                    <input type='checkbox' name='home' value='home' >Home Goods<br>
+                    <br>
+                    <textarea 
+                        id="comments" 
+                        name="comment" 
+                        form="usrform" 
+                        placeholder="Please enter any questions or comments here..."></textarea>
+                        <br>
+                    <input id="submit" type="submit" value="Submit">
+
+                </form>
+            </p>
+            <footer></footer>
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        </div>
     </body>
     
 </html>
