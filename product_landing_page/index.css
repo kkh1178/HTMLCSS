@@ -1,8 +1,39 @@
 html {
-  font-family: Muli, sans-serif;
+    font-family: Muli, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+
 }
 
+/* The navigation bar */
+#nav-bar {
+    overflow: hidden;
+    background-color: #03A99F;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
 
+  /* Links inside the navbar */
+#nav-bar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* padding-top: 40px; */
+}
+  
+  /* Change background on mouse-over */
+#nav-bar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+  /* Header css */
 #headicon {
   margin-top: 70px;
 }
@@ -18,15 +49,22 @@ html {
 
 }
 #flex-container {
-  display: flex;
-  align: center;
-  padding-top: 30px;
-  flex-direction: row;
-  flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  /* flex-wrap: nowrap; */
   /* background-color: DodgerBlue; */
 }
 
+/*advert comments (free shipping etc */
+.flex-title {
+    font-size: 23px;
+}
+
 .advert {
+    display: flex;
     flex-direction: column;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     transition: 0.3s;
@@ -35,101 +73,210 @@ html {
     text-align: center;
 }
 
+/* Video info */
+#videotext {
+    justify-content: center;
+}
+
 #video-section {
-  display: flex;
-  align-items: center;
-  
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .video {
     width: 420;
     height: 345;
     margin: 3px 15px 15px 10px;
+    /* padding:3px 15px 15px 10px; */
 }
 
-/* The navigation bar */
-#nav-bar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
 
-/* Links inside the navbar */
-#nav-bar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change background on mouse-over */
-#nav-bar a:hover {
-  background: #ddd;
-  color: black;
-}
-
+/* Cards with shopping info */
 .card {
   /* Add shadows to create the "card" effect */
-  flex-direction: column;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  padding-bottom: 10px;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    color:white;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Add some padding inside the card container */
 .container {
-  padding: 2px 16px 16px 30px;
-  display: flex;
+    padding: 2px 16px 16px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+.imgheader {
+    font-size: 25px;
+}
 .cardimg {
     margin-top: 10px;
-    max-width: 100%;
+    width: 95%;
     height: 30vw;
     /* enables zoon and not image stretching */
     object-fit: cover;
+    /* padding: 10px 10px 10px 10px; */
 }
 
+#card1 {
+    background-color: rgb(65, 89, 116);
+}
+#card2 {
+    background-color: rgb(244, 123, 91);
+}
+#card3 {
+    background-color: rgb(31, 165, 151);
+}
+#card4 {
+    background-color: rgb(241, 83, 114);
+}
+#card5 {
+    background-color: rgb(217, 192, 165);
+}
+#card6 {
+    background-color: rgb(74, 150, 168);
+}
+
+.button2 {
+    background-color: white;
+    border: 1px #024D48;
+    color: #333;
+    font-size: 17px;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: center;
+    
+}
+button2:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+.button2:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.button2:hover {
+    background-color: #D4DBDB;
+}
+
+
+/* Uniform button class */
 .button {
     background-color: #03A99F;
     border: 1px #024D48;
     color: white;
+    font-size: 17px;
     padding: 10px 24px;
     cursor: pointer;
     float: center;
-   
-
 }
 
 button:not(:last-child) {
     border-right: none; /* Prevent double borders */
-  }
+}
 
 /* Clear floats (clearfix hack) */
 .button:after {
     content: "";
     clear: both;
     display: table;
-  }
+}
 .button:hover {
     background-color: #024D48 ;
-  }
+}
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
+/* Contact info and footer */
+#footer {
+    display: flex;
+    text-align: center;
+}
+
+#about {
+    text-align: center;
+}
+
+#abouttitle {
+    font-size: 23px;
+}
+#form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+}
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* letter-spacing: 2px; */
+}
+
+#shop {
+    display: flex;
+    padding-top: 25px;
+    justify-content: center ;
+    font-size: 30px;
+    /* background-color: #03A99F;
+    border: 1px #024D48;
+    color: white; */
+}
+
+#shoptext {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 650px) {
+    #container {
+        /* display: flex;
+        width: 100%;
+        flex-wrap: wrap; */
+        flex-direction: column;
+    }
+    #flex-container {
+        /* display: flex;
+        width: 100%;
+        flex-wrap: wrap; */
+        flex-direction: column;
+    }
+    #videotest {
+        /* display: flex;
+        width: 100%;
+        flex-wrap: wrap; */
+        flex-direction: column;
+    }
+    #news {
+        /* display: flex;
+        width: 100%;
+        flex-wrap: wrap; */
+        flex-direction: column;
+    }
+    #about {
+        /* display: flex;
+        width: 100%;
+        flex-wrap: wrap; */
+        flex-direction: column;
+    }
+    #contact {
+        /* display: flex;
+        width: 100%;
+        flex-wrap: wrap; */
+        flex-direction: column;
+    }
 }

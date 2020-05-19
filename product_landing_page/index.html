@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Product landing page</title>
     <link rel="stylesheet" href="index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
-  </head>
-  <body>
+</head>
+<body>
     <header id="header">
       <nav id="nav-bar">
           <a class="nav-link" href="#home">Home</a>
@@ -15,21 +15,23 @@
           <a class="nav-link" href="#contact">Contact</a>
           
       </nav>
-      <h1 id="headicon"><b>Thriftygirl Clothing Store</b></h1>
+      <h1 id="headicon"><a id="home" name="home"><b>Thriftygirl Clothing Store</b></a></h1>
       <div id="image">
+          <!-- src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/04/10/16/online-clothes-shops-hero.jpg?w968" -->
+          <!-- https://www.independent.co.uk/extras/indybest/fashion-beauty/best-online-clothes-shops-uk-mens-vintage-womens-luxury-plus-size-discount-deals-a9155011.html -->
         <img
           id="header-img"
-          src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/04/10/16/online-clothes-shops-hero.jpg?w968"
+          src="https://thesavvybackpacker.com/wp-content/uploads/2013/05/womensfashioneuropefeat2.jpg"
           alt="clothing images"
         />
-        <p id="caption">image from <a id="caption" href="https://www.independent.co.uk/extras/indybest/fashion-beauty/best-online-clothes-shops-uk-mens-vintage-womens-luxury-plus-size-discount-deals-a9155011.html"> Independent</a></p>
+        <p id="caption">image curtesy of <a id="caption" href="https://thesavvybackpacker.com/womens-european-fashion/"> The Savvy Backpacker</a></p>
       </div>
     </header>
-      
-      <div id="flex-container">
+
+    <div id="flex-container">
         <div class="advert">
           <div class="flex-title">
-            <a name="home"><b>High Quality Clothing</b></a>
+            <b>High Quality Clothing</b>
           </div>
           <p class="flex-p">
             We thoroughly inspect and select only the best second-hand clothing.
@@ -59,24 +61,81 @@
             Free shipping on purchases of $75 or more. Free Returns.
           </p>
         </div>
-      </div>
-   
-    <div id="video-section">
-        <iframe id="video" class="video"
-        src="https://www.youtube.com/embed/FJHd81IHHGg?controls=0">
-        </iframe>
-        <iframe id="video" class="video"
-        src="https://www.youtube.com/embed/iXR4AWCH_Sk?controls=0">
-        </iframe>
-        <iframe id="video" class="video"
-        src="https://www.youtube.com/embed/t2JHfv9piFs?controls=0">
-        </iframe>
     </div>
-
+    <div id="videotest">
+        <div id="video-section">
+            <div id="videodiv">
+                <iframe id="video" class="video"
+                src="https://www.youtube.com/embed/t2JHfv9piFs?controls=0">
+                </iframe>
+            </div>
+            <div id="videodiv">
+                <iframe id="video" class="video"
+                src="https://www.youtube.com/embed/FJHd81IHHGg?controls=0">
+                </iframe>
+            </div>
+           <div id="videodiv">
+                <iframe id="video" class="video"
+                src="https://www.youtube.com/embed/iXR4AWCH_Sk?controls=0">
+                </iframe>
+           </div>
+            
+        </div>
+    </div>
     
+
+    <div id="news">
+        <div id="shop"><b>Shop</b></div>
+        <p id="shoptext">
+            Check out <a name="shop">news</a> about upcoming events! Shop our holiday sale!
+        </p>
+    </div>
+    <div class="container">
+        <div class="card" id="card1">
+            <img class="cardimg" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Woman in yellow track suit">
+            <div class="imgheader"><b>Athleisure</b></div>
+            <p id="cardtext"> From $6</p>
+            <button class="button2">Shop</button>
+        </div>
+        <div class="card" id="card2">
+            <img class="cardimg" src="https://images.unsplash.com/photo-1551310357-b26c1af069c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Woman in red dress"">
+            <div class="imgheader"><b>Dresses</b></div>
+            <p id="cardtext">From $15</p>
+            <button class="button2">Shop</button>
+        </div>
+
+        <div class="card" id="card3">
+            <img class="cardimg" src="https://images.unsplash.com/photo-1495298599282-d8920eb5009b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Woman in jeans and tshirt">
+            <div class="imgheader"><b>Everyday Staples</b></div>
+            <p id="cardtext">From $8</p>
+            <button class="button2">Shop</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card" id="card4">
+            <img class="cardimg" src="https://images.unsplash.com/photo-1584192758390-aa334e651713?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Offwhite handbag">
+            <div class="imgheader"><b>Handbags</b></div>
+            <p id="cardtext">Up to 75% off retail</p>
+            <button class="button2">Shop</button>
+        </div>
+        <div class="card" id="card5">
+            <img class="cardimg" src="https://images.unsplash.com/photo-1558882199-fc72dcba2994?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="woman on vacation">
+            <div class="imgheader"><b>Bathing Suits</b></div>
+            <p id="cardtext"> Up to 90% off retail</p>
+            <button class="button2">Shop</button>
+        </div>
+        <div class="card" id="card6">
+            <img class="cardimg" src="https://images.unsplash.com/photo-1573100925118-870b8efc799d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="pink high heels">
+            <div class="imgheader"><b>Shoes</b></div>
+            <p id="cardtext">Up to 90% off retail</p>
+            <button class="button2">Shop</button>
+        </div>
+    </div>
+    <br>
+    <br>
     <div id="about">
-        <a name="about"><b>About Thriftygirl</b></a>
-        <p>
+        <a id="abouttitle" name="about"><b>About Thriftygirl</b></a>
+        <p id="abouttext">
             Our founder loves fashion and a good bargain. One of her favorite things to do is to go shopping at bargain-bin, 
             overstock, and thrift stores with her friends, followed by dinner at their favorite Greek restaurant. As a scientist, 
             she also has a passion for saving environment and creating a sustainable way to shop. Fashion is notoriously bad for 
@@ -87,8 +146,8 @@
             on events and sales and send you special discounts on your favorite brands!
         </p>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <br />
-            <label for="email" id="email-label"> Email: </label>
+            <br/>
+            <label for="email" id="email-label"> Email:  </label>
             <input
               type="email"
               id="email"
@@ -97,61 +156,16 @@
               required
             />
             <br />
-            <input id="submit" type="submit" value="Submit" />
+            <input id="submit" class="button" type="submit" value="Submit" />
           </form>
-    </div>
-    <div id="news">
-        <div>Blog</div>
-        <p>
-            Check out <a name="shop">news</a> about upcoming events! Shop our holiday sale!
-        </p>
-    </div>
-    <div class="container">
-        <div class="card">
-            <img class="cardimg" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Woman in yellow track suit">
-            <div class="imgheader"><b>Athliesure</b></div>
-            <p>Shop our comfiest styles for all your WFH needs. Your favorite brands up to 70% off retail.</p>
-            <button class="button">Shop</button>
-        </div>
-        <div class="card">
-            <img class="cardimg" src="https://images.unsplash.com/photo-1551310357-b26c1af069c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Woman in red dress"">
-            <div class="imgheader"><b>Dresses for every occasion</b></div>
-            <p>Shop our extensive collection of formal attire from the designer brands you love. Up to 90% off</p>
-            <button class="button">Shop</button>
-        </div>
-
-        <div class="card">
-            <img class="cardimg" src="https://images.unsplash.com/photo-1495298599282-d8920eb5009b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Woman in jeans and tshirt">
-            <div class="imgheader"><b>Everyday Staples</b></div>
-            <p>Denim. The iconic styles that you know and love. Available in all sizes and up to 90% off of retail. </p>
-            <button class="button">Shop</button>
-        </div>
-    </div>
-    <div class="container">
-        <div class="card">
-            <img class="cardimg" src="https://images.unsplash.com/photo-1584192758390-aa334e651713?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Offwhite handbag">
-            <div class="imgheader"><b>Handbags</b></div>
-            <p>Designer bags without the designer price tag. Shop 1000s of bags as much as 75% off retail</p>
-            <button class="button">Shop</button>
-        </div>
-        <div class="card">
-            <img class="cardimg" src="https://images.unsplash.com/photo-1558882199-fc72dcba2994?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="woman on vacation">
-            <div class="imgheader"><b>Shoes</b></div>
-            <p>Both new with tags and gently used heels, booties, and trainers. Up to 90% off retail</p>
-            <button class="button">Shop</button>
-        </div>
-        <div class="card">
-            <img class="cardimg" src="https://images.unsplash.com/photo-1573100925118-870b8efc799d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="pink high heels">
-            <div class="imgheader"><b>Shoes</b></div>
-            <p>Both new with tags and gently used heels, booties, and trainers. Up to 90% off retail</p>
-            <button class="button">Shop</button>
-        </div>
+          <br>
     </div>
     </div>
-
-    <div id="contact">
-        Questions about an order? Please <a name="contact">contact</a> us a blah@blah.com. For general questions, please see our twitter feed.
-    </div>
+    <footer>
+        <div id="contact">
+            <p><b>Questions </b> about an order? <a name="contact"> Please contact </a>us at blah@blah.com. For general questions, please contact us via our twitter feed.</p>
+        </div>
+    </footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
