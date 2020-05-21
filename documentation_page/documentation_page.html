@@ -1,40 +1,239 @@
 <!DOCTYPE html>
 <html>
-    <head>Python Documentation</head>
+    <head>
+        <title>Python Documentation</title>
+    </head>
     <body>
         <nav id="navbar">
             <header></header>
             <ul>
-                <li><a href="#start" class="nav-link">Getting Started</a></li>
-                <li><a href="#help" class="nav-link">Where to get help</a></li>
-                <li><a href="#git" class="nav-link">Lifecycle of a Pull Request</a></li>
-                <li><a href="tests" class="nav-link">Running & writting tests</a></li>
+                
+                <li><a href="#beginner" class="nav-link">What is Python? a Beginner's Guide</a></li>
+                <li><a href="#git" class="nav-link">Getting started</a></li>
+                <li><a href="tests" class="nav-link">Basic Python Code</a></li>
                 <li><a href="coverage" class="nav-link">Increase Test Coverage</a></li>
                 <li><a href="documentation" class="nav-link">Helping with Documentation</a></li>
+                <li><a href="#contributor" class="nav-link">Become a Contributor</a></li>
             </ul>
         </nav>
         <main id="main-doc">
+            
             <section class="main-section">
-                <header><a id="start" name="start" id="Getting_Started">Getting Started</a></header>
+                <header><a id="beginner" name="beginner" id="Beginners_Guide_to_Python">Beginners Guide to Python</a></header>
+                <p class="paratext">
+                    Text taken from <a href="https://wiki.python.org/moin/BeginnersGuide/Overview">here</a>.
+                    Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.
+                </p>
                 <p>
+                    Some of Python's notable features:
+                    <ul>
+                        <li>
+                            Uses an elegant syntax, making the programs you write easier to read.
+                        </li>
+                        <li>
+                            Is an easy-to-use language that makes it simple to get your program working. 
+                            This makes Python ideal for prototype development and other ad-hoc programming tasks, 
+                            without compromising maintainability.
+                        </li>
+                        <li>
+                            Comes with a large standard library that supports many common programming tasks such 
+                            as connecting to web servers, searching text with regular expressions, reading and modifying files.
+                        </li>
+                        <li>
+                            Python's interactive mode makes it easy to test short snippets of code. There's also a bundled development environment called IDLE.
+                        </li>
+                        <li>
+                            Is easily extended by adding new modules implemented in a compiled language such as C or C++.
+                        </li>
+                        <li>
+                            Can also be embedded into an application to provide a programmable interface.
+                        </li>
+                        <li>
+                            Runs anywhere, including Mac OS X, Windows, Linux, and Unix, with unofficial builds also available for Android and iOS.
+                        </li>
+                        <li>
+                            Is free software in two senses. It doesn't cost anything to download or use Python, or to include it in your application. 
+                            Python can also be freely modified and re-distributed because while the language is copyrighted it's available under an open-source license.
+                        </li>
+                    </ul>
+                </p>
+            </section>
+            <section class="main-section">
+                <header><a id="git" name="git" id="Getting_Startead">Getting Started</a></header>
+                <p class="paratext">
+                    <ul>
+                        <li>Download Python! Find the latest version <a href="http://python.org/download/">here</a></li>
+                        <li>Download a notebook for writing and executing Python code. My favorite notebook is Jupyter, and its perfect for beginners.
+                            Click <a href="https://jupyter.org/install">here</a> for instructions on installation. The easiest way to install Python is 
+                            probablly installing Anaconda which you can download <a href="https://www.anaconda.com/products/individual">here</a>
+                        </li>
+                        <li>Run Jupyter. You should get a notebook dashboard that looks similar to the following image:
+                            <img src="https://www.dataquest.io/wp-content/uploads/2019/01/jupyter-dashboard.jpg" alt="Image of jupyter-dashboard">
+                            <div id="caption">Image curtesy of <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">
+                                <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">Dataquest</a> </div>
+                        <li>Create a new, blank notebook by clicking on the "New" menu and selecting Python 3:
+                            <img src="https://www.dataquest.io/wp-content/uploads/2019/01/new-notebook-menu.jpg" alt="image of dropdown menu">
+                            <div id="caption">Image curtesy of <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">
+                                <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">Dataquest</a> </div>
+                        </li>
+                        <li>
+                            You can start to type code in the code cell which looks like the following:
+                            <img src="https://www.dataquest.io/wp-content/uploads/2019/01/new-notebook.jpg" alt="a Jupyter cell">
+                            <div id="caption">Image curtesy of <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">
+                                <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">Dataquest</a> </div>
+                        </li>
+                        <li>
+                            If you want to provide notes or documentation to your notebook, you can add a Markdown cell.
+                        </li>
+                    </ul>
+                </p>
+            </section>
+            <section class="main-section">
+                <header><a id="basic" name="basic" id="Basic_Python_Code"></a>Basic Python Code</header>
+                <p class="paratext">
+                    <ul>
+                        Write your first line of python code! To exectute, either click the <img src="https://www.dataquest.io/wp-content/uploads/2019/01/run-button.jpg" alt="run button"> button
+
+                        <code>
+                            print("Hellow world!")
+                        </code>
+                    </ul>
 
                 </p>
             </section>
             <section class="main-section">
-                <header><a id="help" name="help" id="Where_to_Get_Help">Where to Get Help</a></header>
-            </section>
-            <section class="main-section">
-                <header><a id="git" name="git" id="Lifecycle_of_a_Pull_Request">Lifecycle of a Pull Request</a></header>
-            </section>
-            <section class="main-section">
-                <header><a id="tests" name="test" id="Running_and_Writing_Tests"></a>Running and Writing Tests</header>
-            </section>
-            <section class="main-section">
                 <header><a id="coverage" name="coverage" id="Increase_Test_Coverage">Increase Test Coverage</a></header>
+                <p class="paratext">
+
+                </p>
             </section>
             <section class="main-section">
                 <header><a id="documentation" name="documentation" id="Helping_with_Documentation">Helping with Documenation</a></header>
+                <p class="paratext">
+
+                </p>
             </section>
+            <!-- <section class="main-section">
+                <header><a id="contributor" name="contributor" id="Become_a_Contributor">Become a Contributor</a></header>
+                <p class="paratext">
+                    This information was pulled from the <a href="https://devguide.python.org/">Python Developers Guide</a>. Please visit their page for more info.
+                </p>
+                <p class="paratext">
+                    This guide is a comprehensive resource for contributing to Python – for both new and experienced contributors. 
+                    It is maintained by the same community that maintains Python. We welcome your contributions to Python!
+                <p class="paratext">
+                    Here are the basic steps needed to get set up and contribute a patch. This is meant as a checklist, 
+                    once you know the basics. For complete instructions please see the setup guide.
+                </p>
+                    <ol>
+                        <li>
+                            <p>
+                            Install and set up Git and other dependencies (see the <a href="https://devguide.python.org/setup/#setup">Git Setup page</a> 
+                            for detailed information).
+                            </p>
+                        </li>
+                        <li>
+                            <p>Fork the <a href="https://github.com/python/cpython">CPython repository</a> to your GitHub account and get the source code using:</p>
+                            <code class="">
+                                git clone https://github.com/<your_username>/cpython
+                                cd cpython
+                            </code>
+                        </li>
+                        <li><p>Build Python, on UNIX and Mac OS use:</p>
+                                <code>
+                                    ./configure --with-pydebug && make -j
+                                </code>
+                            <p>and on Windows use:</p>
+                                <code>
+                                    PCbuild\build.bat -e -d
+                                </code>
+                            <p>See also more detailed instructions, how to install and build dependencies, and the platform-specific pages for UNIX, Mac OS, and Windows.</p>
+                        </li>
+                        <li>
+                            <p> Run the tests:</p>
+                            <code>
+                                ./python -m test -j3
+                            </code>
+                            <p>On most Mac OS X systems, replace ./python with ./python.exe. On Windows, use python.bat. With Python 2.7, replace test with test.regrtest.</p>
+                        </li>
+                        <li>
+                            <p> a new branch where your work for the issue will go, e.g.:</p>
+                            <code>
+                                git checkout -b fix-issue-12345 master
+                            </code>
+                            <p> an issue does not already exist,<a href="https://bugs.python.org/">please create it</a> . Trivial issues (e.g. typo fixes) do not require any issue to be created.</p>
+                        </li>
+                        <li>
+                            Once you fixed the issue, run the tests, run make patchcheck, and if everything is ok, commit.
+                        </li>
+                        <li>
+                            Push the branch on your fork on GitHub and create a pull request. Include the issue number using bpo-NNNN in the pull request description. 
+                            For example: "bpo-12345: Fix some bug in spam module"
+                        </li>
+
+                    </ol>
+                </p>
+            </section><section class="main-section">
+                <header><a id="contributor" name="contributor" id="Become_a_Contributor">Become a Contributor</a></header>
+                <p class="paratext">
+                    This information was pulled from the <a href="https://devguide.python.org/">Python Developers Guide</a>. Please visit their page for more info.
+                </p>
+                <p class="paratext">
+                    This guide is a comprehensive resource for contributing to Python – for both new and experienced contributors. 
+                    It is maintained by the same community that maintains Python. We welcome your contributions to Python!
+                <p class="paratext">
+                    Here are the basic steps needed to get set up and contribute a patch. This is meant as a checklist, 
+                    once you know the basics. For complete instructions please see the setup guide.
+                </p>
+                    <ol>
+                        <li>
+                            <p>
+                            Install and set up Git and other dependencies (see the <a href="https://devguide.python.org/setup/#setup">Git Setup page</a> 
+                            for detailed information).
+                            </p>
+                        </li>
+                        <li>
+                            <p>Fork the <a href="https://github.com/python/cpython">CPython repository</a> to your GitHub account and get the source code using:</p>
+                            <code class="">
+                                git clone https://github.com/<your_username>/cpython
+                                cd cpython
+                            </code>
+                        </li>
+                        <li><p>Build Python, on UNIX and Mac OS use:</p>
+                                <code>
+                                    ./configure --with-pydebug && make -j
+                                </code>
+                            <p>and on Windows use:</p>
+                                <code>
+                                    PCbuild\build.bat -e -d
+                                </code>
+                            <p>See also more detailed instructions, how to install and build dependencies, and the platform-specific pages for UNIX, Mac OS, and Windows.</p>
+                        </li>
+                        <li>
+                            <p> Run the tests:</p>
+                            <code>
+                                ./python -m test -j3
+                            </code>
+                            <p>On most Mac OS X systems, replace ./python with ./python.exe. On Windows, use python.bat. With Python 2.7, replace test with test.regrtest.</p>
+                        </li>
+                        <li>
+                            <p> a new branch where your work for the issue will go, e.g.:</p>
+                            <code>
+                                git checkout -b fix-issue-12345 master
+                            </code>
+                            <p> an issue does not already exist,<a href="https://bugs.python.org/">please create it</a> . Trivial issues (e.g. typo fixes) do not require any issue to be created.</p>
+                        </li>
+                        <li>
+                            Once you fixed the issue, run the tests, run make patchcheck, and if everything is ok, commit.
+                        </li>
+                        <li>
+                            Push the branch on your fork on GitHub and create a pull request. Include the issue number using bpo-NNNN in the pull request description. 
+                            For example: "bpo-12345: Fix some bug in spam module"
+                        </li>
+
+                    </ol>
+                </p>
+            </section> -->
             <!-- <section class="main-section"><a id="" name=""></a></section> -->
 
         </main>
