@@ -10,10 +10,9 @@
                 
                 <li><a href="#beginner" class="nav-link">What is Python? a Beginner's Guide</a></li>
                 <li><a href="#git" class="nav-link">Getting started</a></li>
-                <li><a href="tests" class="nav-link">Basic Python Code</a></li>
-                <li><a href="coverage" class="nav-link">Data Structures</a></li>
-                <li><a href="documentation" class="nav-link">Helping with Documentation</a></li>
-                <li><a href="#contributor" class="nav-link">Become a Contributor</a></li>
+                <li><a href="#tests" class="nav-link">Basic Python Code</a></li>
+                <li><a href="#datatypes" class="nav-link">Data Types</a></li>
+                <li><a href="#datastructures" class="nav-link">Data Structures</a></li>
             </ul>
         </nav>
         <main id="main-doc">
@@ -99,16 +98,22 @@
                                 <p>Write your first line of Python code! To exectute, either click the <img src="https://www.dataquest.io/wp-content/uploads/2019/01/run-button.jpg" alt="run button"> button</p>
                                 <code class="code">
                                     >>>print("Hello world!")
+                                    <br>
+                                    Hello World!
                                 </code>
                             </li>
                             <li>
                                 <p>You can use Python as a calculator.</p>
                                 <code class="code">
                                     >>>num1 = 2
+                                    <br>
                                     >>>num2 = 5
-
+                                    <br>
                                     >>>new_num = num1 = num2
+                                    <br>
                                     >>>print(f'The sum of {num1} and {num2} is {new_num}')
+                                    <br>
+                                    The sum of 2 and 5 is 7
                                 </code>
                                 <p>Here we are using an f-string which will embed python expressions inside string literals. </p>
                             </li>
@@ -116,32 +121,48 @@
                                 <p>How about a For Loop!</p>
                                 <code class="code">
                                     >>>menu = ["spaghetti", "pizza", "parmesan chicken"]
+                                    <br>
                                     >>>for item in menu:
+                                    <br>
                                     >>>    print(item)
+                                    <br>
+                                    spaghetti
+                                    <br>
+                                    pizza
+                                    <br>
+                                    parmesan chicken
                                 </code>
                             </li>
                             <li>
                                 <p>Let's try a if statement</p>
                                 <code class="code">
-                                    a = 33
-                                    b = 200
-
-                                    if b > a:
-                                        print("f{b} is greater than {a}")
+                                    >>>a = 33
+                                    <br>
+                                    >>>b = 200
+                                    <br>
+                                    >>>if b > a:
+                                    <br>
+                                    >>>    print("f{b} is greater than {a}")
+                                    <br>
+                                    200 is greater than 33
                                 </code>
                             </li>
                             <li>
                                 <p>You can also write your own functions:</p>
                                 <code class="code">
-                                    def multiply(a, b):
-                                        m = a*b
-                                        return f'{a}*{b} is equal to {m}'
+                                    >>>def multiply(a, b):
+                                    <br>
+                                    >>>    m = a*b
+                                    <br>
+                                    >>>    return f'{a}*{b} is equal to {m}'
                                 </code>
 
                                 
                                <p> Try it out like this:</p>
                                 <code class="code">
-                                    multiply(2,3)
+                                    >>>multiply(2,3)
+                                    <br>
+                                    2*3 is equal to 6
                                 </code>
                             </li>
                         </ul>
@@ -150,7 +171,22 @@
                 </p>
             </section>
             <section class="main-section">
-                <header><a id="data" name="data" id="Data_Structures">Data Structures</a></header>
+                <header><a id="datatypes" name="datatypes" id="Data_Types">Data Types</a></header>
+                <p class="paratext">
+                    <p>There are several data types built into Python</p>
+                    <ul>
+                        <li>Text Type: str (string)</li>
+                        <li>Numeric Types: int (integer), float, complex</li>
+                        <li>Sequence Types or data structures <a href="#datastructures" class="nav-link">(see below)</a>: list, tuple, range</li>
+                        <li>Mapping Type: dict (dictionary)</li>
+                        <li>Set Types: set, frozenset</li>
+                        <li>Boolean Type: bool</li>
+                        <li>Binary Types: bytes, bytearray, memoryview</li>
+                    </ul>
+                </p>
+            </section>
+            <section class="main-section">
+                <header><a id="datastructures" name="datastructures" id="Data_Structures">Data Structures</a></header>
                 <p class="paratext">
                     <ul>
                         <li>
@@ -177,6 +213,8 @@
                             You access a value in a dictionary like this:
                                 <code id="code"e>
                                     >>>house.floors
+                                    <br>
+                                    2
                                 </code>
                             </p>
                         </li>
@@ -187,141 +225,33 @@
                                 >>>numbers = [1, 3, 3, 4]
                                 <br>
                                 >>>set(numbers)
+                                <br>
                                 {1,3,4}
                             </code>
+                        </li>
+                        <li>
+                            <header>Frozen Sets</header>
+                            <p>Almost the same as a set BUT its not mutable. A frozen set will remain the ame after creation and as a result, 
+                                can be used as keys in a dictionary or as elements of another set.</p>
+                                <code>
+                                    >>>mylist = ['apple', 'banana', 'cherry', "apple", "avocado"]
+                                    <br>
+                                    >>>x = frozenset(mylist)
+                                    <br>
+                                    >>>print(x)
+                                    <br>
+                                    frozenset({'cherry', 'avocado', 'apple', 'banana'})
+                                </code>
                         </li>
                     </ul>
                 </p>
             </section>
-            <section class="main-section">
+            <!-- <section class="main-section">
                 <header><a id="documentation" name="documentation" id="Helping_with_Documentation">Helping with Documenation</a></header>
                 <p class="paratext">
 
                 </p>
-            </section>
-            <!-- <section class="main-section">
-                <header><a id="contributor" name="contributor" id="Become_a_Contributor">Become a Contributor</a></header>
-                <p class="paratext">
-                    This information was pulled from the <a href="https://devguide.python.org/">Python Developers Guide</a>. Please visit their page for more info.
-                </p>
-                <p class="paratext">
-                    This guide is a comprehensive resource for contributing to Python – for both new and experienced contributors. 
-                    It is maintained by the same community that maintains Python. We welcome your contributions to Python!
-                <p class="paratext">
-                    Here are the basic steps needed to get set up and contribute a patch. This is meant as a checklist, 
-                    once you know the basics. For complete instructions please see the setup guide.
-                </p>
-                    <ol>
-                        <li>
-                            <p>
-                            Install and set up Git and other dependencies (see the <a href="https://devguide.python.org/setup/#setup">Git Setup page</a> 
-                            for detailed information).
-                            </p>
-                        </li>
-                        <li>
-                            <p>Fork the <a href="https://github.com/python/cpython">CPython repository</a> to your GitHub account and get the source code using:</p>
-                            <code class="">
-                                git clone https://github.com/<your_username>/cpython
-                                cd cpython
-                            </code>
-                        </li>
-                        <li><p>Build Python, on UNIX and Mac OS use:</p>
-                                <code>
-                                    ./configure --with-pydebug && make -j
-                                </code>
-                            <p>and on Windows use:</p>
-                                <code>
-                                    PCbuild\build.bat -e -d
-                                </code>
-                            <p>See also more detailed instructions, how to install and build dependencies, and the platform-specific pages for UNIX, Mac OS, and Windows.</p>
-                        </li>
-                        <li>
-                            <p> Run the tests:</p>
-                            <code>
-                                ./python -m test -j3
-                            </code>
-                            <p>On most Mac OS X systems, replace ./python with ./python.exe. On Windows, use python.bat. With Python 2.7, replace test with test.regrtest.</p>
-                        </li>
-                        <li>
-                            <p> a new branch where your work for the issue will go, e.g.:</p>
-                            <code>
-                                git checkout -b fix-issue-12345 master
-                            </code>
-                            <p> an issue does not already exist,<a href="https://bugs.python.org/">please create it</a> . Trivial issues (e.g. typo fixes) do not require any issue to be created.</p>
-                        </li>
-                        <li>
-                            Once you fixed the issue, run the tests, run make patchcheck, and if everything is ok, commit.
-                        </li>
-                        <li>
-                            Push the branch on your fork on GitHub and create a pull request. Include the issue number using bpo-NNNN in the pull request description. 
-                            For example: "bpo-12345: Fix some bug in spam module"
-                        </li>
-
-                    </ol>
-                </p>
-            </section><section class="main-section">
-                <header><a id="contributor" name="contributor" id="Become_a_Contributor">Become a Contributor</a></header>
-                <p class="paratext">
-                    This information was pulled from the <a href="https://devguide.python.org/">Python Developers Guide</a>. Please visit their page for more info.
-                </p>
-                <p class="paratext">
-                    This guide is a comprehensive resource for contributing to Python – for both new and experienced contributors. 
-                    It is maintained by the same community that maintains Python. We welcome your contributions to Python!
-                <p class="paratext">
-                    Here are the basic steps needed to get set up and contribute a patch. This is meant as a checklist, 
-                    once you know the basics. For complete instructions please see the setup guide.
-                </p>
-                    <ol>
-                        <li>
-                            <p>
-                            Install and set up Git and other dependencies (see the <a href="https://devguide.python.org/setup/#setup">Git Setup page</a> 
-                            for detailed information).
-                            </p>
-                        </li>
-                        <li>
-                            <p>Fork the <a href="https://github.com/python/cpython">CPython repository</a> to your GitHub account and get the source code using:</p>
-                            <code class="">
-                                git clone https://github.com/<your_username>/cpython
-                                cd cpython
-                            </code>
-                        </li>
-                        <li><p>Build Python, on UNIX and Mac OS use:</p>
-                                <code>
-                                    ./configure --with-pydebug && make -j
-                                </code>
-                            <p>and on Windows use:</p>
-                                <code>
-                                    PCbuild\build.bat -e -d
-                                </code>
-                            <p>See also more detailed instructions, how to install and build dependencies, and the platform-specific pages for UNIX, Mac OS, and Windows.</p>
-                        </li>
-                        <li>
-                            <p> Run the tests:</p>
-                            <code>
-                                ./python -m test -j3
-                            </code>
-                            <p>On most Mac OS X systems, replace ./python with ./python.exe. On Windows, use python.bat. With Python 2.7, replace test with test.regrtest.</p>
-                        </li>
-                        <li>
-                            <p> a new branch where your work for the issue will go, e.g.:</p>
-                            <code>
-                                git checkout -b fix-issue-12345 master
-                            </code>
-                            <p> an issue does not already exist,<a href="https://bugs.python.org/">please create it</a> . Trivial issues (e.g. typo fixes) do not require any issue to be created.</p>
-                        </li>
-                        <li>
-                            Once you fixed the issue, run the tests, run make patchcheck, and if everything is ok, commit.
-                        </li>
-                        <li>
-                            Push the branch on your fork on GitHub and create a pull request. Include the issue number using bpo-NNNN in the pull request description. 
-                            For example: "bpo-12345: Fix some bug in spam module"
-                        </li>
-
-                    </ol>
-                </p>
             </section> -->
-            <!-- <section class="main-section"><a id="" name=""></a></section> -->
-
         </main>
     </body>
 </html>
