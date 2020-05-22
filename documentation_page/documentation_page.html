@@ -2,25 +2,28 @@
 <html>
     <head>
         <title>Python Documentation</title>
+        <link rel="stylesheet" href="doc.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav id="navbar">
-            <header></header>
-            <ul>
-                
-                <li><a href="#beginner" class="nav-link">What is Python? a Beginner's Guide</a></li>
-                <li><a href="#git" class="nav-link">Getting started</a></li>
-                <li><a href="#tests" class="nav-link">Basic Python Code</a></li>
-                <li><a href="#datatypes" class="nav-link">Data Types</a></li>
-                <li><a href="#datastructures" class="nav-link">Data Structures</a></li>
-            </ul>
-        </nav>
+        <div id="wrapper">
+            <nav id="navbar">
+                <header>Introduction to Python</header>
+                <ul>
+                    <li><a href="#beginner" class="nav-link">Beginners Guide to Python</a></li>
+                    <li><a href="#git" class="nav-link">Getting started</a></li>
+                    <li><a href="#tests" class="nav-link">Basic Python Code</a></li>
+                    <li><a href="#datatypes" class="nav-link">Data Types</a></li>
+                    <li><a href="#datastructures" class="nav-link">Data Structures</a></li>
+                </ul>
+            </nav>
+        </div>  
         <main id="main-doc">
             
             <section class="main-section">
-                <header><a id="beginner" name="beginner" id="Beginners_Guide_to_Python">Beginners Guide to Python</a></header>
+                <header class="sectionheader"><a id="beginner" name="beginner" id="Beginners_Guide_to_Python">Beginners Guide to Python</a></header>
                 <p class="paratext">
-                    Text taken from <a href="https://wiki.python.org/moin/BeginnersGuide/Overview">here</a>.
+                    Some of the text for this page was taken from <a href="https://wiki.python.org/moin/BeginnersGuide/Overview">here</a>.
                     Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.
                 </p>
                 <p>
@@ -58,28 +61,28 @@
                 </p>
             </section>
             <section class="main-section">
-                <header><a id="git" name="git" id="Getting_Startead">Getting Started</a></header>
+                <header class="sectionheader"><a id="git" name="git" id="Getting_Startead">Getting Started</a></header>
                 <p class="paratext">
                     <ul>
                         <li><p>Download Python! Find the latest version <a href="http://python.org/download/">here</a></p></li>
                         <li><p>Download a notebook for writing and executing Python code. My favorite notebook is Jupyter, and its perfect for beginners.
                             Click <a href="https://jupyter.org/install">here</a> for instructions on installation. The easiest way to install Python is 
-                            probablly installing Anaconda which you can download <a href="https://www.anaconda.com/products/individual">here</a></p>
+                            probablly installing Anaconda which you can download <a href="https://www.anaconda.com/products/individual">here.</a></p>
                         </li>
                         <li>
                             <p>Run Jupyter. You should get a notebook dashboard that looks similar to the following image:</p>
-                            <img src="https://www.dataquest.io/wp-content/uploads/2019/01/jupyter-dashboard.jpg" alt="Image of jupyter-dashboard">
+                            <img class="dataquest" src="https://www.dataquest.io/wp-content/uploads/2019/01/jupyter-dashboard.jpg" alt="Image of jupyter-dashboard">
                             <div id="caption">Image curtesy of <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">
                                 <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">Dataquest</a> </div>
                         <li>
                             <p>Create a new, blank notebook by clicking on the "New" menu and selecting Python 3:</p>
-                            <img src="https://www.dataquest.io/wp-content/uploads/2019/01/new-notebook-menu.jpg" alt="image of dropdown menu">
+                            <img id="menuimage" src="https://www.dataquest.io/wp-content/uploads/2019/01/new-notebook-menu.jpg" alt="image of dropdown menu">
                             <div id="caption">Image curtesy of <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">
                                 <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">Dataquest</a> </div>
                         </li>
                         <li>
                             <p>You can start to type code in the code cell which looks like the following:</p>
-                            <img src="https://www.dataquest.io/wp-content/uploads/2019/01/new-notebook.jpg" alt="a Jupyter cell">
+                            <img class="dataquest" src="https://www.dataquest.io/wp-content/uploads/2019/01/new-notebook.jpg" alt="a Jupyter cell">
                             <div id="caption">Image curtesy of <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">
                                 <a href="https://www.dataquest.io/blog/jupyter-notebook-tutorial/">Dataquest</a> </div>
                         </li>
@@ -90,12 +93,12 @@
                 </p>
             </section>
             <section class="main-section">
-                <header><a id="basic" name="basic" id="Basic_Python_Code"></a>Basic Python Code</header>
+                <header class="sectionheader"><a id="basic" name="basic" id="Basic_Python_Code"></a>Basic Python Code</header>
                 <p class="paratext">
                     <div id="codetext">
                         <ul class="codelist">
                             <li>
-                                <p>Write your first line of Python code! To exectute, either click the <img src="https://www.dataquest.io/wp-content/uploads/2019/01/run-button.jpg" alt="run button"> button</p>
+                                <p>Write your first line of Python code! To exectute, either click the <img id="run" src="https://www.dataquest.io/wp-content/uploads/2019/01/run-button.jpg" alt="run button"> button.</p>
                                 <code class="code">
                                     >>>print("Hello world!")
                                     <br>
@@ -156,9 +159,7 @@
                                     <br>
                                     >>>    return f'{a}*{b} is equal to {m}'
                                 </code>
-
-                                
-                               <p> Try it out like this:</p>
+                                <p> Try it out like this:</p>
                                 <code class="code">
                                     >>>multiply(2,3)
                                     <br>
@@ -171,7 +172,7 @@
                 </p>
             </section>
             <section class="main-section">
-                <header><a id="datatypes" name="datatypes" id="Data_Types">Data Types</a></header>
+                <header class="sectionheader"><a id="datatypes" name="datatypes" id="Data_Types">Data Types</a></header>
                 <p class="paratext">
                     <p>There are several data types built into Python</p>
                     <ul>
@@ -186,25 +187,25 @@
                 </p>
             </section>
             <section class="main-section">
-                <header><a id="datastructures" name="datastructures" id="Data_Structures">Data Structures</a></header>
+                <header class="sectionheader"><a id="datastructures" name="datastructures" id="Data_Structures">Data Structures</a></header>
                 <p class="paratext">
                     <ul>
                         <li>
-                            <header>Lists</header>
+                            <header class="dataheader">Lists</header>
                             <p>Lists are mutable (or changeable), ordered sequence of elements. It uses square brackets like the following:</p>
                             <code id="code">
                                 >>>veggies = ["onions", "asparagus", "cabbage"]
                             </code>
                         </li>
                         <li>
-                            <header>Tuples</header>
+                            <header class="dataheader">Tuples</header>
                             <p>Tuples are immutable (can't change) sequence of Python objects. It uses parantheses like the following:</p>
                             <code id="code">
                                 >>>children_ages = (3, 5, 11, 15)
                             </code>
                         </li>
                         <li>
-                            <header>Dictionaries</header>
+                            <header class="dataheader">Dictionaries</header>
                             <p>Dictionaries are unordered collection of data values stored in key, value pairs:</p>
                             <code id="code">
                                 >>>house = {"floors": 2, "state": "Texas", "bathrooms": 2.5, "rooms_per_floor": [6,5]}
@@ -212,6 +213,7 @@
                             <p>
                             You access a value in a dictionary like this:
                                 <code id="code"e>
+                                    <br>
                                     >>>house.floors
                                     <br>
                                     2
@@ -219,7 +221,7 @@
                             </p>
                         </li>
                         <li>
-                            <header>Sets</header>
+                            <header class="dataheader">Sets</header>
                             <p>Sets are unordered, iterable, and mutable data type that can not have any duplicates</p>
                             <code>
                                 >>>numbers = [1, 3, 3, 4]
@@ -230,7 +232,7 @@
                             </code>
                         </li>
                         <li>
-                            <header>Frozen Sets</header>
+                            <header class="dataheader">Frozen Sets</header>
                             <p>Almost the same as a set BUT its not mutable. A frozen set will remain the ame after creation and as a result, 
                                 can be used as keys in a dictionary or as elements of another set.</p>
                                 <code>
