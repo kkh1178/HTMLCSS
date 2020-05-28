@@ -1,0 +1,103 @@
+body {
+    display: grid;
+    font-family: 'Muli', sans-serif;
+}
+
+#navbar {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    /* padding-right: 15px; */
+    background-color: #4a4a4a;
+}
+
+#menu li {
+    display: inline; /* Prevents "stepdown" https://css-tricks.com/prevent-menu-stepdown/*/
+}
+
+#navbar a {
+    float: right;
+    display: block; 
+    text-align: center;
+    padding: 14px 16px 16px 14px;
+    text-decoration: none;
+    color: white;
+}
+
+#welcome-section {
+    /* padding-top: 50px; */
+    height: 100vh;
+    background-color: #E5E7E9;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    padding: 150px 0;
+    font-size: 35px;
+}
+
+#projects {
+    text-align: center;
+}
+
+#header-text {
+    font-size: 24px;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.column {
+    text-align: center;
+    padding: 0px 15px 15px 5px;
+}
+
+.project-tile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.tile-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#contact {
+    text-align: center;
+}
+
+#about-text {
+    text-align: center;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+    #welcome-section {
+        /* display: flex; */
+        /* flex-direction: column; */
+        width: 100vw;
+    }
+    #projects {
+        /* display: flex; */
+        /* flex-direction: column; */
+        width: 100vw;
+    }
+
+    .row {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    #navbar a {
+        float: left;
+    }
+}

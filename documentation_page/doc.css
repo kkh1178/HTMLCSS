@@ -119,6 +119,8 @@ and (max-device-width: 1600px) {
 
 @media only screen and (max-width: 500px){
     #main-doc {
+        /* display: flex;
+        flex-direction: column; */
         width: 100%;
         padding-top: 15px;
         margin-top: 360px;
@@ -127,6 +129,8 @@ and (max-device-width: 1600px) {
     }
 
     #navbar {
+        /* display: flex;
+        flex-direction: column; */
         width: 95%;
         height: 350px;
         position: fixed;
@@ -141,6 +145,6 @@ and (max-device-width: 1600px) {
     .sectionheader {
         font-size: 24px;
         font-style: bold;
-        padding-top: 360px;
+        /* margin-top: 360px; */
     }
 }
